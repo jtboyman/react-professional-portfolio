@@ -4,7 +4,7 @@ export default function Resume(){
     return (
         <div>
             <h1>Resume</h1>
-            <p>Hire me thx</p>
+            <p>updated resume coming soon :)</p>
         </div>
     )
 }
