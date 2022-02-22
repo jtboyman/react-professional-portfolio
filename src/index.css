@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Dosis', sans-serif;
+  color: whitesmoke;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/images/space-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #FFFFAD
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Dosis', sans-serif;
+}
+
+.glow {
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+.preview {
+  height: 60%;
+  width: 40%;
+  border-radius: 10%;
+}
+
+.project-container {
+  align-content: center;
+  text-align: center;
+}
+
+.project {
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+
+.centered {
+  align-content: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgba(168, 168, 168, .3);
+}
+
+.tech-list {
+  list-style-position: inside;
 }

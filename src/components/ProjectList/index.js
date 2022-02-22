@@ -9,7 +9,7 @@ export default function ProjectList() {
         {
             image: BingeBuddyImg,
             name: 'Binge Buddy',
-            description: 'Binge Buddy utilizes TMDB and Tasty API to randomly generate movies and recipes based on user input. It is simple to use and guides the iser through prompts to select the type of movie and food they are looking for to return a result.',
+            description: 'Create your own movie night using TMDB and Tasty API to generate a movie and recipe.',
             link: 'https://trm621.github.io/movie-night-generator/',
             github: 'https://github.com/trm621/movie-night-generator'
         },
@@ -23,7 +23,7 @@ export default function ProjectList() {
         {
             image: TaskioImg,
             name: 'Task.io',
-            description: 'The prototype for an app that allows users to sign up and create groups, then assign tasks and award points upon their completion.',
+            description: 'The prototype for an app that allows users to sign up and create groups, then assign tasks and award points upon their completion, gamifying tasks.',
             link: 'https://taskio-project2323.herokuapp.com/',
             github: 'https://github.com/jtboyman/task.io'
         },
@@ -45,8 +45,8 @@ export default function ProjectList() {
 
     function buildProject(project) {
         return (
-            <div>
-                <img src={project.image} alt={project.name}/>
+            <div className="project col-6">
+                <img src={project.image} alt={project.name} className="preview"/>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <ul>
@@ -58,7 +58,7 @@ export default function ProjectList() {
     }
 
     return (
-        <div>
+        <div className="row">
             {projects.map(buildProject)}
         </div>
     )

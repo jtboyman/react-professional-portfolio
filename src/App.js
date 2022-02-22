@@ -5,8 +5,12 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <PortfolioContainer />
-      <Footer />
+      <div>
+        <PortfolioContainer />
+      </div>
+      <div className="position-fixed bottom-0 start-50 translate-middle-x">
+        <Footer />
+      </div>
     </div>
 
   );
